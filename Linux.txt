@@ -1,0 +1,21 @@
+alt+f2 opens a command launcher. This is my favorite because it doesn’t tie up a terminal, and it’s faster than wading through the system menu. 
+
+alt+f4 closes the focused window.
+
+alt+mouse grabs a window anywhere you want to place the cursor. This is great for dragging back a window that has been moved past the edge of the screen.
+
+shift+del permanently deletes a file without sending it to the Trash.
+
+ctrl+alt+l locks the screen.
+
+alt+tab cycles between open applications.
+
+ctrl+backspace deletes an entire word in many text editors.
+
+ctrl+z is undo, and ctrl+shift+z is redo.
+
+ctrl+a selects all, ctrl+c copies the selection, ctrl+x cuts, and ctrl+v pastes.
+
+shift+arrow keys selects, and crtl+right-left arrow keys moves the cursor a word at a time. 
+
+crtl+up-down arrow keys either scrolls up and down a line at a time without moving the cursor, or moves the cursor a line at a time, depending which application you’re using.
