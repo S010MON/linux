@@ -22,6 +22,8 @@ shift+arrow keys selects, and crtl+right-left arrow keys moves the cursor a word
 
 crtl+up-down arrow keys either scrolls up and down a line at a time without moving the cursor, or moves the cursor a line at a time, depending which application you’re using.
 
+Alt - PrtSc:  Screenshot just the in use window     
+
 
 ***Command Line***
 
