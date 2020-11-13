@@ -1,4 +1,4 @@
-***Linux Use***
+*** Linux Use ***
 
 alt+f2 opens a command launcher. This is my favorite because it doesn’t tie up a terminal, and it’s faster than wading through the system menu. 
 
