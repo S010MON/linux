@@ -14,3 +14,6 @@ $ sudo apt install hardinfo
 
 // Sysbench
 $ sudo apt install sysbench
+$ sysbench cpu run
+$ sysbench memory run
+$ sysbench --help
