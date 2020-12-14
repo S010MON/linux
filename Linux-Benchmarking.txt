@@ -9,5 +9,8 @@ $ sensors
 $ sudo apt install psensor
 
 
-// Graphical Sys Info
+// Graphical Sys Info/Benchmarking
 $ sudo apt install hardinfo
+
+// Sysbench
+$ sudo apt install sysbench
