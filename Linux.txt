@@ -88,6 +88,10 @@ You can use this shortcut to view the previous command. You can press it repeate
 You can use this shortcut in conjugation with Ctrl+P. Ctrl+N displays the next command. If you are viewing previous commands with Ctrl+P, you can use Ctrl+N to navigate back and forth. Many terminals have this shortcut mapped to the PgDn key.#
 
 
+Change Java Version
+
+  $ java -version
+  $ sudo update-alternatives --config java
 
 Linux Commands:
 
