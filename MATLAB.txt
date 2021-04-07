@@ -216,6 +216,12 @@ Like a class in Java can hold multiple data types within a data structure:
 
 --- Calculus ---
 
+Defining simple algebraic functions
+
+	for f(x) = x^2 + 1
+	
+	f= @(x) x^2+1;
+
 Evaluate Polynomials
 
 	p = [3 2 1];		% Create a vector holding the degree of each polynomial
