@@ -1,4 +1,4 @@
-*** Linux Use ***
+### Linux Use
 
 alt+f2 opens a command launcher. This is my favorite because it doesn’t tie up a terminal, and it’s faster than wading through the system menu. 
 
@@ -25,7 +25,7 @@ crtl+up-down arrow keys either scrolls up and down a line at a time without movi
 Alt - PrtSc:  Screenshot just the in use window     
 
 
-***Command Line***
+### Command Line
 
 1. Tab
 
@@ -88,11 +88,11 @@ You can use this shortcut to view the previous command. You can press it repeate
 You can use this shortcut in conjugation with Ctrl+P. Ctrl+N displays the next command. If you are viewing previous commands with Ctrl+P, you can use Ctrl+N to navigate back and forth. Many terminals have this shortcut mapped to the PgDn key.#
 
 
-Change Java Version
+### Change Java Version
 
   $ java -version
   $ sudo update-alternatives --config java
 
-Linux Commands:
+###  Linux Commands:
 
   sudo rm -rf DIRECTORY_NAME    //Remove a directory and all of its contents
