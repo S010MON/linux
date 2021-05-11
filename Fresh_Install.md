@@ -14,11 +14,13 @@
     sudo apt install lm-sensors
     sudo sensors-detect
     sudo apt install psensor
- 
+    
     sudo apt install tmux
     sudo apt install htop
     sudo apt install tree
     sudo apt install vim
+    
+    sudo apt install git
     sudo apt install gitg
     sudo apt install tig
     sudo apt install octave
