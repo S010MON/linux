@@ -11,8 +11,12 @@
 
 ## Gradle
 
-        sudo apt install gradle
-
+    download binary > gradle-7.0.1-bin.zip
+    
+    unzip gradle-7.0.1-bin.zip
+    mv gradle-7.0.1 /opt/
+    export PATH=$PATH:/opt/gradle-7.0.1/bin       // Set the path to the binary
+    
 ## Terminal
 
     sudo apt install lm-sensors
