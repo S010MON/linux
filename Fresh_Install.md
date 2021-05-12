@@ -9,6 +9,10 @@
     sudo apt install openjdk-11-jdk
     sudo apt install python3
 
+## Gradle
+
+        sudo apt install gradle
+
 ## Terminal
 
     sudo apt install lm-sensors
