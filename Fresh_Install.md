@@ -15,7 +15,11 @@
     
     unzip gradle-7.0.1-bin.zip
     mv gradle-7.0.1 /opt/
-    export PATH=$PATH:/opt/gradle-7.0.1/bin       // Set the path to the binary
+    export PATH=$PATH:/opt/gradle-7.0.1/bin       // Set the path to the binary temporarily (in this shell)
+
+   For a permanent path: `vim /etc/environment`
+    add: `PATH=$PATH:/opt/gradle-7.0.1/bin`
+    
     
 ## Terminal
 
