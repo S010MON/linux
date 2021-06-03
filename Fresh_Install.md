@@ -47,3 +47,9 @@
     discord
     GNU Octave
   
+  ## Zoom
+  
+    https://zoom.us/download?os=linux
+    
+    sudo apt install ./zoom_amd64.deb
+    
