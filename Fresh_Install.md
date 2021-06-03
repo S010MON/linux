@@ -11,7 +11,7 @@
 
 ## Gradle
 
-    download binary > gradle-7.0.1-bin.zip
+    download binary > gradle-7.0.1-bin.zip from https://gradle.org/releases/
     
     unzip gradle-7.0.1-bin.zip
     mv gradle-7.0.1 /opt/
