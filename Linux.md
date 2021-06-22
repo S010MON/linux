@@ -2,6 +2,10 @@
 
   $ java -version
   $ sudo update-alternatives --config java
+  
+### Git LoC count
+
+  git ls-files | xargs wc -l
 
 ###  Files:
 
