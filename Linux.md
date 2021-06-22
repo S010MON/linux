@@ -1,11 +1,11 @@
 ### Change Java Version
 
-  $ java -version
-  $ sudo update-alternatives --config java
+    $ java -version
+    $ sudo update-alternatives --config java
   
 ### Git LoC count
 
-  git ls-files | xargs wc -l
+    git ls-files | xargs wc -l
 
 ###  Files:
 
