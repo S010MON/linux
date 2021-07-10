@@ -6,6 +6,10 @@
 ### Git LoC count
 
     git ls-files | xargs wc -l
+    
+   or
+   
+    cloc $(git ls-files)
 
 ###  Files:
 
