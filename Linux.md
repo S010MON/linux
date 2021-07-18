@@ -31,6 +31,10 @@
     
     rm -rf DIRECTORY_NAME                       // Remove a directory and all of its contents
     
+### Commands
+
+    cat FILE_NAME                               // Concatonate (print) a file to the terminal
+    
 ### Command Line Shortcuts
 
 2. Ctrl + C
