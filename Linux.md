@@ -35,6 +35,8 @@
 
     cat FILE_NAME                               // Concatonate (print) a file to the terminal
     
+    which COMMAND_NAME                          // Find the path of the command binary that you are using
+    
 ### Command Line Shortcuts
 
 2. Ctrl + C
