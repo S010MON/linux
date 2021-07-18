@@ -37,6 +37,8 @@
     
     which COMMAND_NAME                          // Find the path of the command binary that you are using
     
+    apropos KEY_WORD                            // Conduct a keyword search of commands
+    
 ### Command Line Shortcuts
 
 2. Ctrl + C
