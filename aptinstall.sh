@@ -14,23 +14,31 @@ function install {
 }
 
 # Basics
-install awscli
-install chromium-browser
-install curl
-install exfat-utils
-install file
+install lm-sensors
+sudo sensors-detect -y
+install psensor
+install git
+install gitg
+install tig
+install tree
 install git
 install htop
 install nmap
-install openvpn
 install tmux
 install vim
 
+# Languages
+install default-jre
+install default-jdk
+install openjdk-8-jdk
+install openjdk-11-jdk
+install python3
+install octave
+
 # Image processing
 install gimp
-install jpegoptim
-install optipng
 
 # Fun stuff
+install cmatrix
 install figlet
 install lolcat
