@@ -9,8 +9,9 @@
     sudo apt install openjdk-11-jdk
     sudo apt install python3
 
-## Gradle
+## Binaries
 
+   ### Gradle
     download binary > gradle-7.0.1-bin.zip from https://gradle.org/releases/
     
     unzip gradle-7.0.1-bin.zip
@@ -20,6 +21,8 @@
    For a permanent path: `vim ~/.bashrc`
     add: `PATH=$PATH:/opt/gradle-7.0.1/bin` to the end
     
+   ### Anaconda 
+   https://docs.anaconda.com/anaconda/install/linux/
     
 ## Terminal
 
