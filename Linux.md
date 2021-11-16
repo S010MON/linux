@@ -39,6 +39,10 @@
     
     apropos KEY_WORD                            // Conduct a keyword search of commands
     
+### APT
+
+    ls /usr/share/applications | awk -F '.desktop' ' { print $1}' - > ~/Desktop/applications.txt
+  
 ### Command Line Shortcuts
 
 2. Ctrl + C
