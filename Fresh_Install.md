@@ -1,6 +1,13 @@
     sudo apt update
     sudo apt upgrade
+   
+# Auto-Install
+    xargs sudo apt-get install <packages.txt
+
+-----------------------------------------
     
+# Manual Install
+   
 ## Languages
 
     sudo apt install default-jre
@@ -55,4 +62,7 @@
     https://zoom.us/download?os=linux
     
     sudo apt install ./zoom_amd64.deb
+    
+    
+
     
