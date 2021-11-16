@@ -2,7 +2,13 @@
     sudo apt upgrade
    
 # Auto-Install
-    xargs sudo apt-get install <packages.txt
+using script:
+
+    ./aptinstall.sh
+ 
+using packages.txt:
+
+    xargs sudo apt-get install <packages.txt>
 
 -----------------------------------------
     
