@@ -1,4 +1,4 @@
-# Pop!\_OS / UBUNTU Installation
+# Pop!\_OS / Ubuntu Installation
  
 ## 1. Update & Clone  
     sudo apt update
