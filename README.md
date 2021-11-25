@@ -13,7 +13,7 @@ using script:
  
 using packages.txt:
 
-    xargs sudo apt-get install <packages.txt>
+    xargs sudo apt-get install <packages.txt
 
 -----------------------------------------
     
