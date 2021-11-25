@@ -71,9 +71,6 @@ using packages.txt:
   
     postman
     eclipse
-    intellij
-    pycharm
-    arduino?
     discord
     GNU Octave
   
