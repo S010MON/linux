@@ -29,6 +29,7 @@ using packages.txt:
     sudo apt install htop
     sudo apt install tree
     sudo apt install vim
+    sudo apt install snapd
     
     sudo apt install git
     sudo apt install gitg
@@ -42,6 +43,10 @@ using packages.txt:
     sudo apt install openjdk-8-jdk
     sudo apt install openjdk-11-jdk
     sudo apt install python3
+    
+ ## IDEs
+ 
+    sudo snap install intellij-idea-community --classic
 
 -----------------------------------------
 
