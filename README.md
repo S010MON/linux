@@ -21,28 +21,37 @@ using packages.txt:
 
 **If auto install does not work run these manually, else, skip to part 3**
 
-    sudo apt install lm-sensors
-    sudo sensors-detect
-    sudo apt install psensor
-    
-    sudo apt install tmux
-    sudo apt install htop
-    sudo apt install tree
-    sudo apt install vim
-    sudo apt install snapd
-    
-    sudo apt install git
-    sudo apt install gitg
-    sudo apt install tig
-    sudo apt install octave
+    apt install lm-sensors
+    sensors-detect
+    apt install lm-sensors
+    apt install psensor
+    apt install gitg
+    apt install tig
+    apt install tree
+    apt install git
+    apt install htop
+    apt install nmap
+    apt install tmux
+    apt install vim
+    apt install snapd
 
-## Languages
+### Languages
+    apt install default-jre
+    apt install default-jdk
+    apt install openjdk-8-jdk
+    apt install openjdk-11-jdk
+    apt install gradle
+    apt install python3
+    apt install octave
 
-    sudo apt install default-jre
-    sudo apt install default-jdk
-    sudo apt install openjdk-8-jdk
-    sudo apt install openjdk-11-jdk
-    sudo apt install python3
+ ### Image processing
+    apt install gimp
+
+ ### Fun stuff
+    apt install cmatrix
+    apt install figlet
+    apt install lolcat
+    apt install neofetch
 
 -----------------------------------------
 
