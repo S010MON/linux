@@ -79,9 +79,9 @@ using packages.txt:
     discord
     GNU Octave
     
-   ### Intellij
+   ### Jetbrains
  
-    sudo snap install intellij-idea-community --classic
+    https://www.jetbrains.com/toolbox-app/
   
    ### Zoom
    Download the deb package: https://zoom.us/download?os=linux
