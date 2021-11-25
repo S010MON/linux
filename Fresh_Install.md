@@ -4,7 +4,7 @@
 # Auto-Install
 using script:
 
-    bash file_path/aptinstall.sh
+    bash install.sh
  
 using packages.txt:
 
