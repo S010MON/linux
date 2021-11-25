@@ -15,7 +15,6 @@ function install {
 
 # Basics
 install lm-sensors
-sudo sensors-detect -y
 install psensor
 install gitg
 install tig
