@@ -17,7 +17,6 @@ function install {
 install lm-sensors
 sudo sensors-detect -y
 install psensor
-install git
 install gitg
 install tig
 install tree
