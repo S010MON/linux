@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update
+sudo apt update && sudo apt full-upgrade -y
 
 function install {
   which $1 &> /dev/null
@@ -40,3 +40,10 @@ install gimp
 install cmatrix
 install figlet
 install lolcat
+
+# Run all scripts in programs/
+for f in programs/*.sh; do bash "$f" -H; done
+
+# Get all upgrades
+sudo apt upgrade -y
+sudo apt autoremove -y
