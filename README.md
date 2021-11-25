@@ -18,7 +18,8 @@ using packages.txt:
 -----------------------------------------
     
 ## 2.b Manual Install
-**If auto install does not work run these manually, else, skip to part 3 **
+
+**If auto install does not work run these manually, else, skip to part 3**
 
     sudo apt install lm-sensors
     sudo sensors-detect
