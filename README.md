@@ -1,10 +1,12 @@
 # Pop!\_OS / UBUNTU Installation
  
- 
+## 1. Update & Clone  
     sudo apt update
     sudo apt upgrade
+    sudo apt install git
+    git clone https://github.com/S010MON/Linux.git
    
-## 1.a Auto-Install
+## 2.a Auto-Install
 using script:
 
     bash install.sh
@@ -15,8 +17,8 @@ using packages.txt:
 
 -----------------------------------------
     
-## 1.b Manual Install
-**If auto install does not work run these manually, else, skip to part 2 **
+## 2.b Manual Install
+**If auto install does not work run these manually, else, skip to part 3 **
 
     sudo apt install lm-sensors
     sudo sensors-detect
@@ -42,7 +44,7 @@ using packages.txt:
 
 -----------------------------------------
 
-## 2. Binaries
+## 3. Binaries
 
    ### a. Gradle
    You can install gradle using `apt install gradle` but apt usually does not hold the most up to date gradle version; this can be found and installed below. 
@@ -59,7 +61,7 @@ using packages.txt:
    ### b. Anaconda
    Follow instructions at: https://docs.anaconda.com/anaconda/install/linux/
       
-## 3.   Software Manager
+## 4.   Software Manager
   
     postman
     eclipse
