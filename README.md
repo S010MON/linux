@@ -1,7 +1,10 @@
+# Pop!\_OS / UBUNTU Installation
+ 
+ 
     sudo apt update
     sudo apt upgrade
    
-# Auto-Install
+## 1.a Auto-Install
 using script:
 
     bash install.sh
@@ -12,8 +15,8 @@ using packages.txt:
 
 -----------------------------------------
     
-# Manual Install
-If auto install does not work run these manually, else, skip this section
+## 1.b Manual Install
+**If auto install does not work run these manually, else, skip to part 2 **
 
     sudo apt install lm-sensors
     sudo sensors-detect
@@ -28,7 +31,6 @@ If auto install does not work run these manually, else, skip this section
     sudo apt install gitg
     sudo apt install tig
     sudo apt install octave
------------------------------------------
 
 ## Languages
 
@@ -38,9 +40,13 @@ If auto install does not work run these manually, else, skip this section
     sudo apt install openjdk-11-jdk
     sudo apt install python3
 
-## Binaries
+-----------------------------------------
 
-   ### Gradle
+## 2. Binaries
+
+   ### a. Gradle
+   You can install gradle using `apt install gradle` but apt usually does not hold the most up to date gradle version; this can be found and installed below. 
+   
     download binary > gradle-7.0.1-bin.zip from https://gradle.org/releases/
     
     unzip gradle-7.0.1-bin.zip
@@ -50,10 +56,10 @@ If auto install does not work run these manually, else, skip this section
    For a permanent path: `vim ~/.bashrc`
     add: `PATH=$PATH:/opt/gradle-7.0.1/bin` to the end
     
-   ### Anaconda 
-   https://docs.anaconda.com/anaconda/install/linux/
+   ### b. Anaconda
+   Follow instructions at: https://docs.anaconda.com/anaconda/install/linux/
       
-   ## Software Manager
+## 3.   Software Manager
   
     postman
     eclipse
@@ -63,11 +69,10 @@ If auto install does not work run these manually, else, skip this section
     discord
     GNU Octave
   
-  ## Zoom
-  
-    https://zoom.us/download?os=linux
-    
-    sudo apt install ./zoom_amd64.deb
+   ### Zoom
+   Download the deb package: https://zoom.us/download?os=linux
+   
+   run: `sudo apt install ./zoom_amd64.deb`
     
     
 
