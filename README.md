@@ -43,10 +43,6 @@ using packages.txt:
     sudo apt install openjdk-8-jdk
     sudo apt install openjdk-11-jdk
     sudo apt install python3
-    
- ## IDEs
- 
-    sudo snap install intellij-idea-community --classic
 
 -----------------------------------------
 
@@ -73,6 +69,10 @@ using packages.txt:
     eclipse
     discord
     GNU Octave
+    
+   ### Intellij
+ 
+    sudo snap install intellij-idea-community --classic
   
    ### Zoom
    Download the deb package: https://zoom.us/download?os=linux
