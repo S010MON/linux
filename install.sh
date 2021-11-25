@@ -24,7 +24,7 @@ install htop
 install nmap
 install tmux
 install vim
-install snap
+install snapd
 
 # Languages
 install default-jre
