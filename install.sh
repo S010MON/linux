@@ -30,6 +30,7 @@ install default-jre
 install default-jdk
 install openjdk-8-jdk
 install openjdk-11-jdk
+install gradle
 install python3
 install octave
 
