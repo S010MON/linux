@@ -4,7 +4,6 @@ sudo apt install lm-sensors
 sudo sensors-detect
 sensors
 
-
 # Graphical Temp Tracking
 sudo apt install psensor
 
