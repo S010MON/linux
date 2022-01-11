@@ -18,9 +18,12 @@ using packages.txt:
 -----------------------------------------
     
 ## 2.b Manual Install
-
-**If auto install does not work run these manually, else, skip to part 3**
-
+```python
+if not auto_install_working: 
+    run_below_comands_manually()
+else:
+    skip_to_part_three()
+```
     apt install lm-sensors
     sensors-detect
     apt install lm-sensors
