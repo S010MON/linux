@@ -65,7 +65,7 @@ else:
    ### a. Gradle
    You can install gradle using `apt install gradle` but apt usually does not hold the most up to date gradle version; this can be found and installed below. 
    
-   download ![binary](https://gradle.org/releases/) of gradle-7.0.1-bin.zip then navigate to folder and run:
+   download binary here https://gradle.org/releases/ of gradle-7.0.1-bin.zip then navigate to folder and run:
    
 ```
 unzip gradle-7.0.1-bin.zip                    // extract the files
