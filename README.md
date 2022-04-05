@@ -69,7 +69,7 @@ else:
    
 ```
 unzip gradle-7.0.1-bin.zip                    // extract the files
-mv gradle-7.0.1 /opt/                         // move the files into /opt/ folder
+sudo mv gradle-7.0.1 /opt/                         // move the files into /opt/ folder
 export PATH=$PATH:/opt/gradle-7.0.1/bin       // Set the path to the binary temporarily (in this shell)
 ```
 For a permanent path edit: `vim ~/.bashrc`
