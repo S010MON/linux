@@ -89,7 +89,13 @@ You can test this by closing the terminal, opening a new one, and running`gradle
     
    ### Jetbrains
  
-    https://www.jetbrains.com/toolbox-app/
+   Download toolbox from ![JetBrains.com] https://www.jetbrains.com/toolbox-app/
+   
+   run `sudo tar -xvzf ~/Downloads/jetbrains-toolbox-1.23.11731.tar.gz.`
+  
+   move the extracted files to `/opt/` using `sudo mv jetbrains-toolbox-1.23.11731 /opt/`
+   
+   run using `./opt/jetbrains-toolbox-1.23.11731/jetbrains-toolbox`
   
    ### Zoom
    Download the deb package: https://zoom.us/download?os=linux
