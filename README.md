@@ -7,11 +7,13 @@
     git clone https://github.com/S010MON/Linux.git
    
 ## 2.a Auto-Install
-using script:
+Using the script, run the following:
 
     bash install.sh
  
-using packages.txt:
+-OR- 
+
+To use the packages.txt file (which you may want to look int and edit):
 
     xargs sudo apt-get install <packages.txt
 
