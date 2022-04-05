@@ -65,14 +65,15 @@ else:
    ### a. Gradle
    You can install gradle using `apt install gradle` but apt usually does not hold the most up to date gradle version; this can be found and installed below. 
    
-    download binary > gradle-7.0.1-bin.zip from https://gradle.org/releases/
-    
-    unzip gradle-7.0.1-bin.zip
-    mv gradle-7.0.1 /opt/
-    export PATH=$PATH:/opt/gradle-7.0.1/bin       // Set the path to the binary temporarily (in this shell)
-
-   For a permanent path: `vim ~/.bashrc`
-    add: `PATH=$PATH:/opt/gradle-7.0.1/bin` to the end
+   download ![binary](https://gradle.org/releases/) of gradle-7.0.1-bin.zip then navigate to folder and run:
+   
+```
+unzip gradle-7.0.1-bin.zip                    // extract the files
+mv gradle-7.0.1 /opt/                         // move the files into /opt/ folder
+export PATH=$PATH:/opt/gradle-7.0.1/bin       // Set the path to the binary temporarily (in this shell)
+```
+For a permanent path edit: `vim ~/.bashrc`
+and add: `PATH=$PATH:/opt/gradle-7.0.1/bin` to the end of the file
     
    ### b. Anaconda
    Follow instructions at: https://docs.anaconda.com/anaconda/install/linux/
