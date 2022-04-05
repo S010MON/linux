@@ -75,7 +75,7 @@ export PATH=$PATH:/opt/gradle-7.4.2/bin       // Set the path to the binary temp
 For a permanent path edit: `vim ~/.bashrc`
 and add: `PATH=$PATH:/opt/gradle-7.4.2/bin` to the end of the file
 
-You can test this by closing the terminal, opening a new one, and running`gradle`
+You can test this by closing the terminal, opening a new one, and running `gradle`
     
    ### b. Anaconda
    Follow instructions at: https://docs.anaconda.com/anaconda/install/linux/
