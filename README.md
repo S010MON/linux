@@ -89,7 +89,6 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
 ## 4.   Software Manager
   
     postman
-    eclipse
     discord
     GNU Octave
     
