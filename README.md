@@ -110,16 +110,14 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    
    ### c. NordVPN
    
-   Download the .deb from ![NordVPN](https://nordvpn.com/nl/download/) and run `sudo apt install nordvpn-release_1.0.0_all.deb`
+   Download the .deb from ![NordVPN](https://nordvpn.com/nl/download/) and run: `sudo apt install ./nordvpn-release_1.0.0_all.deb`
   
    ### d. MATLAB
    
    Download the installer from ![Mathworks](https://nl.mathworks.com/products/get-matlab.html?s_tid=gn_getml)
   
    ### e. Zoom
-   Download the deb package: https://zoom.us/download?os=linux
-   
-   run: `sudo apt install ./zoom_amd64.deb`
+   Download the deb package from ![Zoom](https://zoom.us/download?os=linux) and run: `sudo apt install ./zoom_amd64.deb`
     
     
 
