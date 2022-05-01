@@ -94,7 +94,7 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
     
    ### Jetbrains
  
-   Download toolbox from ![JetBrains.com] https://www.jetbrains.com/toolbox-app/
+   Download toolbox from ![JetBrains.com](https://www.jetbrains.com/toolbox-app/)
    
    run `sudo tar -xvzf ~/Downloads/jetbrains-toolbox-1.23.11731.tar.gz.`
   
