@@ -104,11 +104,19 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    
    run using `./opt/jetbrains-toolbox-1.23.11731/jetbrains-toolbox`
   
-   ### b. MATLAB
+   ### b. Nordpass
+   
+   Download the snap using `sudo snap install nordpass`
+   
+   ### c. NordVPN
+   
+   Download the .deb from ![NordVPN](https://nordvpn.com/nl/download/) and run `sudo apt install nordvpn-release_1.0.0_all.deb`
+  
+   ### d. MATLAB
    
    Download the installer from ![Mathworks](https://nl.mathworks.com/products/get-matlab.html?s_tid=gn_getml)
   
-   ### c. Zoom
+   ### e. Zoom
    Download the deb package: https://zoom.us/download?os=linux
    
    run: `sudo apt install ./zoom_amd64.deb`
