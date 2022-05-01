@@ -92,7 +92,9 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
     discord
     GNU Octave
     
-   ### Jetbrains
+## 5. Third Party Installers
+
+   ### a. Jetbrains
  
    Download toolbox from ![JetBrains.com](https://www.jetbrains.com/toolbox-app/)
    
@@ -102,7 +104,11 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    
    run using `./opt/jetbrains-toolbox-1.23.11731/jetbrains-toolbox`
   
-   ### Zoom
+   ### b. MATLAB
+   
+   Download the installer from ![Mathworks](https://nl.mathworks.com/products/get-matlab.html?s_tid=gn_getml)
+  
+   ### c. Zoom
    Download the deb package: https://zoom.us/download?os=linux
    
    run: `sudo apt install ./zoom_amd64.deb`
