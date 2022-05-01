@@ -114,7 +114,12 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
   
    ### d. MATLAB
    
-   Download the installer from https://www.mathworks.com
+   Download the installer from https://www.mathworks.com then unzip the file and run the installer:
+   ```
+   unzip matlab_R2022a_glnxa64.zip
+   ./install
+   ```
+   Ensure you set the directory to one outside of `/root/` which seems to be the default, as this will cause a failed installation otherwise
   
    ### e. Zoom
    Download the deb package from ![Zoom](https://zoom.us/download?os=linux) and run: `sudo apt install ./zoom_amd64.deb`
