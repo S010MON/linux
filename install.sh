@@ -2,55 +2,51 @@
 
 sudo apt update && sudo apt full-upgrade -y
 
-function install {
-  which $1 &> /dev/null
-
-  if [ $? -ne 0 ]; then
-    echo "Installing: ${1}..."
-    sudo apt install -y $1
-  else
-    echo "Already installed: ${1}"
-  fi
-}
-
 # Basics
-install lm-sensors
-install psensor
-install gitg
-install tig
-install tree
-install git
-install htop
-install nmap
-install tmux
-install vim
-install snapd
+sudo apt install lm-sensors -y
+sudo sensors-detect --auto
+sudo apt install psensor -y
+sudo apt install git -y
+sudo apt install gitg -y
+sudo apt install tig -y
+sudo apt install tree -y
+sudo apt install htop -y
+sudo apt install nmap -y
+sudo apt install tmux -y
+sudo apt install vim -y
+sudo apt install snapd -y
 
 # Languages
-install default-jre
-install default-jdk
-install openjdk-8-jdk
-install openjdk-11-jdk
-install gradle
-install python3
-install octave
+sudo apt install default-jre -y
+sudo apt install default-jdk -y
+sudo apt install openjdk-8-jdk -y 
+sudo apt install openjdk-11-jdk -y
+sudo apt install gradle -y 
+sudo apt install python3 -y
+sudo apt install octave -y
 
 # Image processing
-install gimp
+apt install gimp -y
 
 # docker
 install docker.io
 install docker-compose
 
 # Fun stuff
-install cmatrix
-install figlet
-install lolcat
-install neofetch
-
-# Run all scripts in programs/
-for f in programs/*.sh; do bash "$f" -H; done
+sudo apt install cmatrix -y
+sudo apt install figlet -y
+sudo apt install lolcat -y
+sudo apt install neofetch -y
 
 # Get all upgrades
 sudo apt upgrade -y
 sudo apt autoremove -y
+
+# Install Nord elements
+bash ./install_nord.sh
+
+# Install Zoom
+bash ./install_zoom.sh
+
+# Install Jetbrains Toolbox
+bash ./install_toolbox.sh

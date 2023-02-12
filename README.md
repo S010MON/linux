@@ -79,32 +79,54 @@ export PATH=$PATH:/opt/gradle-7.4.2/bin       // Set the path to the binary temp
 For a permanent path edit: `vim ~/.bashrc`
 and add: `PATH=$PATH:/opt/gradle-7.4.2/bin` to the end of the file
 
-You can test this by closing the terminal, opening a new one, and running `gradle`
-    
+You can test this by closing the terminal, opening a new one, and running `gradle --version`
+
+**Troublehsooting** If the following error presents:
+```
+WARNING: An illegal reflective access operation has occurred
+```
+ensure that the apt version of gradle has been removed using `sudo apt remove gradle` and test again. 
+
    ### b. Anaconda
    Follow instructions at: https://docs.anaconda.com/anaconda/install/linux/
       
 ## 4.   Software Manager
   
     postman
-    eclipse
     discord
     GNU Octave
     
-   ### Jetbrains
+## 5. Third Party Installers
+
+   ### a. Jetbrains
  
-   Download toolbox from ![JetBrains.com] https://www.jetbrains.com/toolbox-app/
+   Download toolbox from ![JetBrains.com](https://www.jetbrains.com/toolbox-app/)
    
-   run `sudo tar -xvzf ~/Downloads/jetbrains-toolbox-1.23.11731.tar.gz.`
+   run `sudo tar -xvzf ~/Downloads/jetbrains-toolbox-1.23.11731.tar.gz`
   
    move the extracted files to `/opt/` using `sudo mv jetbrains-toolbox-1.23.11731 /opt/`
    
    run using `./opt/jetbrains-toolbox-1.23.11731/jetbrains-toolbox`
   
-   ### Zoom
-   Download the deb package: https://zoom.us/download?os=linux
+   ### b. Nordpass
    
-   run: `sudo apt install ./zoom_amd64.deb`
+   Download the snap using `sudo snap install nordpass`
+   
+   ### c. NordVPN
+   
+   Download the .deb from ![NordVPN](https://nordvpn.com/nl/download/) and run: `sudo apt install ./nordvpn-release_1.0.0_all.deb`
+  
+   ### d. MATLAB
+   
+   Download the installer from https://www.mathworks.com then unzip the file and run the installer:
+   ```
+   unzip matlab_R2022a_glnxa64.zip
+   ./install
+   ```
+   Ensure you set the directory to one outside of `/root/` which seems to be the default, as this will cause a failed installation otherwise
+  
+   ### e. Zoom
+   Download the deb package from ![Zoom](https://zoom.us/download?os=linux) and run: `sudo apt install ./zoom_amd64.deb`
     
     
 
