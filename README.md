@@ -49,10 +49,14 @@ else:
     apt install python3
     apt install octave
 
- ### Image processing
+### Docker
+    apt install docker.io
+    apt install docker-compose
+
+### Image processing
     apt install gimp
 
- ### Fun stuff
+### Fun stuff
     apt install cmatrix
     apt install figlet
     apt install lolcat

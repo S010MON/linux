@@ -38,6 +38,10 @@ install octave
 # Image processing
 install gimp
 
+# docker
+install docker.io
+install docker-compose
+
 # Fun stuff
 install cmatrix
 install figlet
