@@ -5,6 +5,7 @@ sudo apt update && sudo apt full-upgrade -y
 # Basics
 sudo apt install lm-sensors -y
 sudo sensors-detect --auto
+sudo apt install vitals -y
 sudo apt install psensor -y
 sudo apt install git -y
 sudo apt install gitg -y
