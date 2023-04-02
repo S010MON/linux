@@ -25,8 +25,9 @@ sudo apt install gradle -y
 sudo apt install python3 -y
 sudo apt install octave -y
 
-# Image processing
+# Image and video processing
 apt install gimp -y
+apt install kdenlive -y
 
 # docker
 install docker.io
@@ -46,7 +47,7 @@ sudo apt autoremove -y
 bash ./install_nord.sh
 
 # Install Zoom
-bash ./install_zoom.sh
+# bash ./install_zoom.sh
 
 # Install Jetbrains Toolbox
 bash ./install_toolbox.sh
