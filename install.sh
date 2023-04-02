@@ -26,12 +26,12 @@ sudo apt install python3 -y
 sudo apt install octave -y
 
 # Image and video processing
-apt install gimp -y
-apt install kdenlive -y
+sudo apt install gimp -y
+sudo apt install kdenlive -y
 
 # docker
-install docker.io
-install docker-compose
+sudo apt install docker.io -y
+sudo apt install docker-compose -y
 
 # Fun stuff
 sudo apt install cmatrix -y
