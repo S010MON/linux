@@ -114,8 +114,12 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    ### c. NordVPN
    
    Download the .deb from [NordVPN](https://nordvpn.com/nl/download/) and run: `sudo apt install ./nordvpn-release_1.0.0_all.deb`
+   
+   ### d. Vitals
+   
+   https://github.com/corecoding/Vitals
   
-   ### d. MATLAB
+   ### e. MATLAB
    
    Download the installer from https://www.mathworks.com then unzip the file and run the installer:
    ```
@@ -124,8 +128,7 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    ```
    Ensure you set the directory to one outside of `/root/` which seems to be the default, as this will cause a failed installation otherwise
   
-   ### e. Zoom
-   Download the deb package from ![Zoom](https://zoom.us/download?os=linux) and run: `sudo apt install ./zoom_amd64.deb`
+
     
     
 
