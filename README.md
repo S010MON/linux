@@ -113,7 +113,7 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    
    ### c. NordVPN
    
-   Download the .deb from ![NordVPN](https://nordvpn.com/nl/download/) and run: `sudo apt install ./nordvpn-release_1.0.0_all.deb`
+   Download the .deb from [NordVPN](https://nordvpn.com/nl/download/) and run: `sudo apt install ./nordvpn-release_1.0.0_all.deb`
   
    ### d. MATLAB
    
