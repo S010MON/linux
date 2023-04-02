@@ -28,7 +28,6 @@ else:
 ```
     apt install lm-sensors
     sensors-detect
-    apt install lm-sensors
     apt install psensor
     apt install gitg
     apt install tig
