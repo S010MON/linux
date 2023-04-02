@@ -117,7 +117,7 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
    
    ### d. Vitals
    
-   https://github.com/corecoding/Vitals
+   Open the Extension Manager (installed above automatically), search for Vitals and click Install. Full details avialable here:https://github.com/corecoding/Vitals
   
    ### e. MATLAB
    
