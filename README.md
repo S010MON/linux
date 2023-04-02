@@ -6,63 +6,11 @@
     sudo apt install git
     git clone https://github.com/S010MON/Linux.git
    
-## 2.a Auto-Install
+## 2 Auto-Install
 Using the script, run the following:
 
     bash install.sh
  
--OR- 
-
-To use the packages.txt file (which you may want to look int and edit):
-
-    xargs sudo apt-get install <packages.txt
-
------------------------------------------
-    
-## 2.b Manual Install
-```python
-if not auto_install_working: 
-    run_below_comands_manually()
-else:
-    skip_to_part_three()
-```
-    apt install lm-sensors
-    sensors-detect
-    apt install psensor
-    apt install gitg
-    apt install tig
-    apt install tree
-    apt install git
-    apt install htop
-    apt install nmap
-    apt install tmux
-    apt install vim
-    apt install snapd
-
-### Languages
-    apt install default-jre
-    apt install default-jdk
-    apt install openjdk-8-jdk
-    apt install openjdk-11-jdk
-    apt install gradle
-    apt install python3
-    apt install octave
-
-### Docker
-    apt install docker.io
-    apt install docker-compose
-
-### Image processing
-    apt install gimp
-
-### Fun stuff
-    apt install cmatrix
-    apt install figlet
-    apt install lolcat
-    apt install neofetch
-
------------------------------------------
-
 ## 3. Binaries
 
    ### a. Gradle
