@@ -3,9 +3,8 @@
 sudo apt update && sudo apt full-upgrade -y
 
 # Basics
-sudo apt install lm-sensors -y
+sudo apt install gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors
 sudo sensors-detect --auto
-sudo apt install vitals -y
 sudo apt install psensor -y
 sudo apt install git -y
 sudo apt install gitg -y
