@@ -14,6 +14,7 @@ sudo apt install htop -y
 sudo apt install nmap -y
 sudo apt install tmux -y
 sudo apt install vim -y
+sudo apt install neovim -y
 sudo apt install snapd -y
 
 # Languages
