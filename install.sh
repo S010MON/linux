@@ -34,6 +34,11 @@ sudo apt install kdenlive -y
 sudo apt install docker.io -y
 sudo apt install docker-compose -y
 
+# Front end
+sudo apt install npm -y
+sudo npm install -g @vue/cli -y
+sudo npm update -g @vue/cli -y
+
 # Fun stuff
 sudo apt install cmatrix -y
 sudo apt install figlet -y
