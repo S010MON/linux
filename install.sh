@@ -30,3 +30,7 @@ sudo apt autoremove -y
 bash ./install_nord.sh
 bash ./install_docker.sh
 bash ./install_toolbox.sh
+bash ./install_neovim.sh
+
+sudo rm ~/.bashrc
+sudo cp bashrc ~/.bashrc
