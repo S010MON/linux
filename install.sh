@@ -27,8 +27,6 @@ sudo apt install neofetch -y
 sudo apt upgrade -y
 sudo apt autoremove -y
 
-# Install Nord elements
 bash ./install_nord.sh
-
-# Install Jetbrains Toolbox
+bash ./install_docker.sh
 bash ./install_toolbox.sh
