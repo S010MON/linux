@@ -8,3 +8,11 @@ chmod u+x nvim.appimage
 
 # Move to user bin folder
 sudo mv nvim.appimage /usr/local/bin/nvim
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+unzip JetBrainsMono.zip
+sudo mv *.ttf  ~/.local/share/fonts/
+
+# Update the bashrc 
+sudo rm ~/.bashrc
+sudo cp bashrc ~/.bashrc
