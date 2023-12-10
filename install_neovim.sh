@@ -16,3 +16,5 @@ sudo mv *.ttf  ~/.local/share/fonts/
 # Update the bashrc 
 sudo rm ~/.bashrc
 sudo cp bashrc ~/.bashrc
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
