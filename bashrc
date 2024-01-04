@@ -85,3 +85,5 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias vim=nvim
+alias git-clean='git branch -D `git branch --merged | grep -v \* | xargs`'
+alias git-loc='git ls-files | xargs wc -l'
