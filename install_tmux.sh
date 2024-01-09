@@ -8,3 +8,6 @@ make && sudo make install
 
 # Install tmux package manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Copy conf file to correct location
+cp tmux.conf ~/.config/tmux/tmux.conf
