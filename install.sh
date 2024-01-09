@@ -6,7 +6,6 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt install git -y
 sudo apt install tree -y
 sudo apt install htop -y
-sudo apt install tmux -y
 sudo apt install vim -y
 sudo apt install neovim -y
 sudo apt install snapd -y
@@ -27,6 +26,7 @@ sudo apt install neofetch -y
 sudo apt upgrade -y
 sudo apt autoremove -y
 
+bash ./install_tmux.sh  # This is used over apt to get version 3.3a
 bash ./install_nord.sh
 bash ./install_docker.sh
 bash ./install_toolbox.sh
