@@ -87,3 +87,6 @@ fi
 alias vim=nvim
 alias git-clean='git branch -D `git branch --merged | grep -v \* | xargs`'
 alias git-loc='git ls-files | xargs wc -l'
+alias dup='docker compose up --build'
+alias ddown='docker compose down'
+alias dup='docker system prune --volumes'
