@@ -13,7 +13,15 @@ Using the script, run the following:
  
 ## 3. Binaries
 
-   ### a. Gradle
+   ### a. tmux
+   See `install_tmux.sh` 
+
+   ### b. neovim
+   1. See `install_neovim.sh`
+   2. Move `.config/nvim` files from this repo to `~/.config/nvim`
+   3. To update mason plugin manager run `:MasonInstallAll` in the 
+
+   ### c. Gradle
    You can install gradle using `apt install gradle` but apt usually does not hold the most up to date gradle version; this can be found and installed below. 
    
    download binary here https://gradle.org/releases/ of gradle-7.4.2-bin.zip (most recent at time of writing) then navigate to folder and run:
@@ -36,11 +44,6 @@ ensure that the apt version of gradle has been removed using `sudo apt remove gr
 
    ### b. Anaconda
    Follow instructions at: https://docs.anaconda.com/anaconda/install/linux/
-      
-## 4.   Software Manager
-  
-    discord
-    GNU Octave
     
 ## 5. Third Party Installers
 
