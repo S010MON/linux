@@ -18,4 +18,4 @@ sudo rm ~/.bashrc
 sudo cp bashrc ~/.bashrc
 
 rm -rf ~/.local/share/nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+git clone https://github.com/S010MON/nvim.git ~/.config/nvim --depth 1
