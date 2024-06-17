@@ -72,10 +72,9 @@
         chdir: /tmp/tmux-3.3a
         target: install
         
-- name: Configure TMUX
-  hosts: 127.0.0.1
-  tasks:
     - name: Clone TMUX package manager
+      become: yes
+      become_user: "{{ lookup('env', 'USER') }}"
       git:
         repo: https://github.com/tmux-plugins/tpm
         dest: "~/.tmux/plugins/tpm"
