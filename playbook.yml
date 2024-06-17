@@ -74,7 +74,7 @@
         
     - name: Clone TMUX package manager
       become: yes
-      become_user: "{{ lookup('env', 'USER') }}"
+      become_user: "{{ ansible_env.USER }}"
       git:
         repo: https://github.com/tmux-plugins/tpm
         dest: "~/.tmux/plugins/tpm"
