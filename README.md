@@ -15,18 +15,10 @@ Using the script, run the following:
 ```bash
 ansible-pull -U https://github.com/alephinsights/ansible --full --purge -o  playbook.yml
 ```
+For tmux changes to take effect, use <prefix-I> to install
  
-## 3. Binaries
-
-   ### a. tmux
-   See `install_tmux.sh` 
-
-   ### b. neovim
-   1. See `install_neovim.sh`
-   2. Move `.config/nvim` files from this repo to `~/.config/nvim`
-   3. To update mason plugin manager run `:MasonInstallAll` in the 
-    
-## 5. Third Party Installers
+   
+## 3. Third Party Installers
 
    ### a. Nordpass
    
