@@ -1,9 +1,9 @@
 ---
 - name: Install Neo Vim
   hosts: 127.0.0.1
-  become: yes
   tasks:
     - name: Ensure apt is up to date
+      become: yes
       apt:
         update_cache: yes
       
@@ -13,6 +13,7 @@
         dest: /tmp/nvim.appimage
 
     - name: Modify access rights
+      become: yes
       file:
         path: /tmp/nvim.appimage
         mode: u+x
@@ -41,13 +42,13 @@
         
 - name: Install Tmux
   hosts: 127.0.0.1
-  become: yes
   tasks:
     - name: Debug HOME variable
       debug:
         var: ansible_env.HOME
   
     - name: Install TMUX dependencies
+      become: yes
       apt:
         name:
           - libevent-dev
@@ -76,15 +77,11 @@
         target: install
         
     - name: Clone TMUX package manager
-      become: yes
-      become_user: "{{ ansible_env.USER }}"
       git:
         repo: https://github.com/tmux-plugins/tpm
         dest: "{{ ansible_env.HOME }}/.tmux/plugins/tpm"
 
     - name: Copy TMUX configuration file
-      become: yes
-      become_user: "{{ ansible_env.USER }}"
       copy:
         src: tmux.conf
         dest: "{{ ansible_env.HOME }}/.config/tmux/tmux.conf"
