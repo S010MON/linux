@@ -44,9 +44,6 @@
 - name: Install Tmux
   hosts: 127.0.0.1
   tasks:
-    - name: Debug HOME variable
-      debug:
-        var: ansible_env.HOME
   
     - name: Install TMUX dependencies
       become: yes
