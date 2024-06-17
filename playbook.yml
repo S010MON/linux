@@ -1,72 +1,83 @@
 ---
-- name: Software Installation
+- name: Install Neo Vim
   hosts: 127.0.0.1
   become: yes
   tasks:
-
-  - name: Ensure apt is up to date
-    apt:
-      update_cache: yes
+    - name: Ensure apt is up to date
+      apt:
+        update_cache: yes
       
-  - name: Install Tools
-    apt:
-      name: 
-        - git
-        - inetutils-ping
-        - telnet
-        - net-tools
-        - vim
-        - iotop
-        - tcpdump
-        - build-essential
-        - cmake
-      
-- name: Install Docker
-  hosts: 127.0.0.1
-  become: yes
-  tasks:
+    - name: Download Neovim app image
+      get_url:
+        url: https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+        dest: /tmp/nvim.appimage
 
-  - name: Ensure apt is up to date
-    apt:
-      update_cache: yes
+    - name: Modify access rights
+      file:
+        path: /tmp/nvim.appimage
+        mode: u+x
 
-  - name: Install required packages
-    apt:
-      name:
-        - apt-transport-https
-        - ca-certificates
-        - curl
-        - gnupg-agent
-        - software-properties-common
-      
-  - name: Add Dockers official GPG key
-    apt_key:
-      url: https://download.docker.com/linux/ubuntu/gpg
-      file: /etc/apt/keyrings/docker.asc
-      state: present
+    - name: Move app image to user bin folder
+      copy:
+        src: /tmp/nvim.appimage
+        dest: /usr/local/bin/nvim
+        remote_src: yes
 
-  - name: Add Docker repository
-    apt_repository:
-      repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu focal stable
-      state: present
+    - name: Update bashrc
+      copy:
+        src: bashrc
+        dest: ~/.bashrc
 
-  - name: Install Docker
-    apt:
-      name:
-        - docker-ce
-        - docker-ce-cli
-        - containerd.io
-        - docker-buildx-plugin
-        - docker-compose-plugin
-      state: latest
-      update_cache: true
+    - name: Remove existing Neovim configuration
+      file:
+        path: ~/.local/share/nvim
+        state: absent
 
-  - name: Add all users to docker group
-    shell: |
-      groupadd docker
-      for user in $(cut -d: -f1 /etc/passwd);
-      do
-        if id -u "$user" >/dev/null 2>&1; then
-            usermod -aG docker $user;
-        fi
-      done
+    - name: Clone Neovim configuration repository
+      git:
+        repo: https://github.com/S010MON/nvim.git
+        dest: ~/.config/nvim
+        depth: 1
+      - name: Install TMUX dependencies
+      apt:
+        name:
+          - libevent-dev
+          - ncurses-dev
+        state: present
+
+    - name: Download TMUX source
+      get_url:
+        url: https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
+        dest: /tmp/tmux-3.3a.tar.gz
+
+    - name: Extract TMUX source
+      unarchive:
+        src: /tmp/tmux-3.3a.tar.gz
+        dest: /tmp
+        remote_src: yes
+
+    - name: Configure TMUX
+      command: ./configure
+      args:
+        chdir: /tmp/tmux-3.3a
+
+    - name: Make and install TMUX
+      make:
+        chdir: /tmp/tmux-3.3a
+        target: install
+
+    - name: Clone TMUX package manager
+      git:
+        repo: https://github.com/tmux-plugins/tpm
+        dest: ~/.tmux/plugins/tpm
+
+    - name: Copy TMUX configuration file
+      copy:
+        src: tmux.conf
+        dest: ~/.config/tmux/tmux.conf
+
+    - name: Restart the shell
+      shell: exec $SHELL
+      args:
+        executable: /bin/bash
+
