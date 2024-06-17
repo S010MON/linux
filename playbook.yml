@@ -74,8 +74,10 @@
 
     - name: Clone TMUX package manager
       git:
+      become: yes
+      become_user: "{{ ansible_user }}"
         repo: https://github.com/tmux-plugins/tpm
-        dest: ~/.tmux/plugins/tpm
+        dest: {{ ansible_user_dir }}/.tmux/plugins/tpm
 
     - name: Copy TMUX configuration file
       copy:
