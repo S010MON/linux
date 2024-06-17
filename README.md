@@ -10,6 +10,11 @@
 Using the script, run the following:
 
     bash install.sh
+
+## 2.a Ansible Pull
+```bash
+sudo ansible-pull -U https://github.com/alephinsights/ansible --full --purge -o  playbook.yml
+```
  
 ## 3. Binaries
 
