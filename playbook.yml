@@ -68,11 +68,13 @@
         remote_src: yes
 
     - name: Configure TMUX
+      become: yes
       command: ./configure
       args:
         chdir: /tmp/tmux-3.3a
 
     - name: Make and install TMUX
+      become: yes
       make:
         chdir: /tmp/tmux-3.3a
         target: install
