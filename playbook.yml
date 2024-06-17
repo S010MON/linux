@@ -77,7 +77,7 @@
       become_user: "{{ ansible_user }}"
       git:
         repo: https://github.com/tmux-plugins/tpm
-        dest: {{ ansible_user_dir }}/.tmux/plugins/tpm
+        dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm"
 
     - name: Copy TMUX configuration file
       copy:
