@@ -38,7 +38,8 @@
         repo: https://github.com/S010MON/nvim.git
         dest: ~/.config/nvim
         depth: 1
-      - name: Install TMUX dependencies
+      
+    - name: Install TMUX dependencies
       apt:
         name:
           - libevent-dev
