@@ -13,7 +13,7 @@ Using the script, run the following:
 
 ## 2.b Ansible Pull
 ```bash
-ansible-pull -U https://github.com/alephinsights/ansible --full --purge -o  playbook.yml
+ansible-pull -U https://github.com/s010mon/linux --full --purge -o  playbook.yml
 ```
 For tmux changes to take effect, use <prefix-I> to install
  
