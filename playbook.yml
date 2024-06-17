@@ -19,6 +19,7 @@
         mode: u+x
 
     - name: Move app image to user bin folder
+      become: yes
       copy:
         src: /tmp/nvim.appimage
         dest: /usr/local/bin/nvim
