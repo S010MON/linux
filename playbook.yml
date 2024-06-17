@@ -77,14 +77,14 @@
       become_user: "{{ ansible_env.USER }}"
       git:
         repo: https://github.com/tmux-plugins/tpm
-        dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm"
+        dest: "{{ ansible_env.HOME }}/.tmux/plugins/tpm"
 
     - name: Copy TMUX configuration file
       become: yes
       become_user: "{{ ansible_env.USER }}"
       copy:
         src: tmux.conf
-        dest: "{{ ansible_user_dir }}/.config/tmux/tmux.conf"
+        dest: "{{ ansible_env.HOME }}/.config/tmux/tmux.conf"
 
     - name: Restart the shell
       shell: exec $SHELL
