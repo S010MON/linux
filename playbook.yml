@@ -79,15 +79,21 @@
         chdir: /tmp/tmux-3.3a
         target: install
         
+    - name: Create TMUX configuration directory
+      file:
+        path: "~/.config/tmux"
+        state: directory
+        mode: '0755'
+        
     - name: Clone TMUX package manager
       git:
         repo: https://github.com/tmux-plugins/tpm
-        dest: "{{ ansible_env.HOME }}/.tmux/plugins/tpm"
+        dest: "~/.tmux/plugins/tpm"
 
     - name: Copy TMUX configuration file
       copy:
         src: tmux.conf
-        dest: "{{ ansible_env.HOME }}/.config/tmux/tmux.conf"
+        dest: "~/.config/tmux/tmux.conf"
 
     - name: Restart the shell
       shell: exec $SHELL
