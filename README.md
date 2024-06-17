@@ -13,7 +13,7 @@ Using the script, run the following:
 
 ## 2.b Ansible Pull
 ```bash
-sudo ansible-pull -U https://github.com/alephinsights/ansible --full --purge -o  playbook.yml
+ansible-pull -U https://github.com/alephinsights/ansible --full --purge -o  playbook.yml
 ```
  
 ## 3. Binaries
