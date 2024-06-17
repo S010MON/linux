@@ -12,10 +12,11 @@ Using the script, run the following:
     bash install.sh
 
 ## 2.b Ansible Pull
+Install ansible pull using `sudo apt install ansible` then run:
 ```bash
 ansible-pull -U https://github.com/s010mon/linux --full --purge -o  playbook.yml
 ```
-For tmux changes to take effect, use <prefix-I> to install
+For tmux changes to take effect, use `<prefix>-I` to install
  
    
 ## 3. Third Party Installers
