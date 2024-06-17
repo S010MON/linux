@@ -38,7 +38,12 @@
         repo: https://github.com/S010MON/nvim.git
         dest: ~/.config/nvim
         depth: 1
-      
+        
+- name: Install Tmux
+  hosts: 127.0.0.1
+  become: yes
+  tasks:
+  
     - name: Install TMUX dependencies
       apt:
         name:
