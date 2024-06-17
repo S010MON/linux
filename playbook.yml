@@ -71,13 +71,14 @@
       make:
         chdir: /tmp/tmux-3.3a
         target: install
-
+        
+- name: Configure TMUX
+  hosts: 127.0.0.1
+  tasks:
     - name: Clone TMUX package manager
-      become: yes
-      become_user: "{{ ansible_user }}"
       git:
         repo: https://github.com/tmux-plugins/tpm
-        dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm"
+        dest: "~/.tmux/plugins/tpm"
 
     - name: Copy TMUX configuration file
       copy:
