@@ -43,6 +43,9 @@
   hosts: 127.0.0.1
   become: yes
   tasks:
+    - name: Debug HOME variable
+      debug:
+        var: ansible_env.HOME
   
     - name: Install TMUX dependencies
       apt:
