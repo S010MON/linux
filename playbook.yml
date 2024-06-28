@@ -6,6 +6,16 @@
       become: yes
       apt:
         update_cache: yes
+        
+    - name: Install Neovim Plugin dependencies
+      become: yes
+      apt:
+        name:
+          - python3
+          - python3-venv
+          - nodejs
+          - npm
+        state: present
       
     - name: Download Neovim app image
       get_url:
