@@ -1,16 +1,11 @@
 ---
-- name: Update and upgrade
-  become: true
-  apt:
-    upgrade: yes
-    update_cache: yes
-
 - name: Install Neo Vim
   hosts: 127.0.0.1
   tasks:
     - name: Ensure apt is up to date
       become: yes
       apt:
+        upgrade: yes
         update_cache: yes
         
     - name: Install Neovim Plugin dependencies
