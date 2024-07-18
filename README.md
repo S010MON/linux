@@ -1,17 +1,6 @@
 # Pop!\_OS / Ubuntu Installation
  
-## 1. Update & Clone  
-    sudo apt update
-    sudo apt upgrade
-    sudo apt install git
-    git clone https://github.com/S010MON/Linux.git
-   
-## 2.a Auto-Install
-Using the script, run the following:
-
-    bash install.sh
-
-## 2.b Ansible Pull
+## 1.  Ansible Pull
 Install ansible pull using `sudo apt install ansible` then run:
 ```bash
 ansible-pull -U https://github.com/s010mon/linux --full --purge -o  playbook.yml
@@ -19,7 +8,7 @@ ansible-pull -U https://github.com/s010mon/linux --full --purge -o  playbook.yml
 For tmux changes to take effect, use `<prefix>-I` to install
  
    
-## 3. Third Party Installers
+## 2. Third Party Installers
 
    ### a. Nordpass
    
