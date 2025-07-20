@@ -10,17 +10,19 @@ For tmux changes to take effect, use `<prefix>-I` to install
    
 ## 2. Third Party Installers
 
-   ### a. Nordpass
+### a. Nordpass
    
-   Download the snap using `sudo snap install nordpass`
+Download the snap using `sudo snap install nordpass`
    
-   ### b. NordVPN
+### b. [NordVPN](https://support.nordvpn.com/hc/en-us/articles/20196094470929-Installing-NordVPN-on-Linux-distributions)
    
-   Download the .deb from [NordVPN](https://nordvpn.com/nl/download/) and run: `sudo apt install ./nordvpn-release_1.0.0_all.deb`
+```
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+```
    
-   ### c. Vitals
+### c. Vitals
    
-   Open the Extension Manager (installed above automatically), search for Vitals and click Install. Full details avialable here:https://github.com/corecoding/Vitals
+Open the Extension Manager (installed above automatically), search for Vitals and click Install. Full details avialable here:https://github.com/corecoding/Vitals
   
   
 
